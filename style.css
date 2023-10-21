@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+    --colour-white: rgb(223, 215, 200);
+    --colour-black: rgb(10, 10, 10);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colour-black);
+    margin: 0rem;
+    overflow: hidden;
+    user-select: none;
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+}
+
+#title {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.5vmin;
+}
+
+.text {
+    color: var(--colour-white);
+    font-size: 6vmin;
+    font-family: Lexend;
+    text-align: center;
+}
+
+.subTitle {
+    opacity: 0.5;
+    font-size: 4vmin;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 6vmin;
+
+    transform: translateX(-50%) scale(100%);
+    gap: 1vmin;
+    
+    padding: 1vmin;
+    padding-top: 0.5vmin;
+    padding-bottom: 0.5vmin;
+    
+    border: 0.3vmin solid var(--colour-white);
+    border-radius: 1vmin;
+
+    transition: transform 200ms ease-out, border-radius 200ms ease-out, border 200ms ease-out;
+}
+
+#source:hover {
+    border-radius: 2.5vmin;
+    border: 0.5vmin solid var(--colour-white);
+    transform: translateX(-50%) scale(105%);
+}
+
+#source-img {
+    width: 7vmin;
+}
+
+#source-text {
+    font-size: 4vmin;
+}
