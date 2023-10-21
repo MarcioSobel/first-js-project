@@ -1,2 +1,2 @@
-# first-js-project
-My first project using Javascript. I've used Hyperplexed's video as a guide!
+My first JS Project!
+I've used [Hyperplexed's video](https://youtu.be/PkADl0HubMY) as a guide to this; but I'm happy to finally start with js
